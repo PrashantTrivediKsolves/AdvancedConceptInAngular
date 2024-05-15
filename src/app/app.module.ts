@@ -21,6 +21,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
+import { DropDownComponent } from './drop-down/drop-down.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { SearchPipe } from './search.pipe';
     AboutBehaviorComponent,
     GalleryBehaviorComponent,
     ProductBehaviorComponent,
-    SearchPipe
+    SearchPipe,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

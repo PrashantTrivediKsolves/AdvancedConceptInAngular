@@ -1,0 +1,29 @@
+<!-- <div>
+  <label for="dropdown">Select Option:</label>
+
+  <select id="dropdown" [(ngModel)]="selectedOption" (change)="onOptionSelected()">
+
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+
+  </select>
+
+  <p *ngIf="selectedOption">Selected Option: {{ selectedOption }}</p>
+</div> -->
+
+
+<!-- populate the dropdown after getting the data through api call -->
+
+<div>
+  <label for="dropdown">Select Option:</label>
+  <select id="dropdown" [(ngModel)]="selectedOption" (change)="onOptionSelected()">
+    <option *ngFor="let option of dropdownOptions" [value]="option.name">{{ option.name }}</option>
+  </select>
+
+  <p *ngIf="selectedOption">Selected Option ID: {{ selectedOption }}</p>
+</div>
+
+
+

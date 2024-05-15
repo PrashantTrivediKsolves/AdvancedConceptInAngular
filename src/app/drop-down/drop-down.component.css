@@ -1,0 +1,11 @@
+#dropdown {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#dropdown option {
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #212529;
+}
